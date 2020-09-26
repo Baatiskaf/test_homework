@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+</head>
+
+<body>
+    <h1>Форма регистрации</h1>
+    <form id="my_form"
+        onsubmit="alert(decodeURI(new URLSearchParams(Array.from(new FormData(document.getElementById('my_form')))).toString()));return false;">
+        <fieldset>
+            <legend>Первый шаг</legend>
+            <label for="name">Твое имя?</label> <br>
+            <input type="text" name="registration_login" id="name">
+            <br>
+            <label for="email">Твоя эл.почта</label> <br>
+            <input type="email" name="registration_email" id="email">
+            <br>
+            <label for="password">Создай пароль</label> <br>
+            <input type="password" name="registration_password" id="password">
+            <br>
+            <label for="passwordConfirm">Повтори пароль</label> <br>
+            <input type="password" name="registration_password_confirm" id="passwordConfirm">
+        </fieldset>
+        <fieldset>
+            <legend>Второй шаг</legend>
+            <label for="position">Кто ты?</label> <br>
+            <select name="profession" id="position">
+                <option value="junior">джуниор</option>
+                <option value="middle">мидл</option>
+                <option value="senior">синьор</option>
+                <option value="lead">лид</option>
+                <option hidden>Choose one</option>
+            </select>
+            <br>
+            <fieldset>
+                <legend>Опыт работы</legend>
+                <input checked type="radio" name="experience" id="exp1" value="&lt;1">
+                <label for="exp1">менее года</label>
+                <br>
+                <input type="radio" name="experience" id="exp2" value="1-3">
+                <label for="exp2">1 - 3</label>
+                <br>
+                <input type="radio" name="experience" id="exp3" value="3-5">
+                <label for="exp3">3 - 5</label>
+                <br>
+                <input type="radio" name="experience" id="exp4" value="&gt;5">
+                <label for="exp4">более 5</label>
+            </fieldset>
+        </fieldset>
+        <fieldset>
+            <legend>Третий шаг</legend>
+            <label for="birth">Веди дату рождения</label> <br>
+            <input type="date" name="dataBirth" id="birth">
+            <br>
+            <label for="about">Расскажите о себе</label> <br>
+            <textarea name="aboutMessage" id="about"></textarea>
+        </fieldset>
+        <input type="submit" value="Подтвердить регистрацию">
+
+    </form>
+
+
+</body>
+
+
+</html>

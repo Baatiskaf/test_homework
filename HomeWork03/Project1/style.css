@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    background: url(../Project1/Assets/Images/venez-a-la-rencontre-de-vos-supe.jpg);
+}
+
+
+
+.container{
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500;
+}
+h1 {
+    
+    color: #fff;
+    font-size: 25px;
+    padding: 5px;
+    margin: 0 auto;
+    width: auto;
+    background-color: rgba(245, 137, 255, 0.850);
+    text-align: center;
+
+}
+
+h3 {
+    
+    color: #fff;
+    font-size: 25px;
+    padding: 5px;
+    margin: 0 auto;
+    width: auto;
+    background-color: rgba(245, 137, 255, 0.850);
+    text-align: center;
+
+    
+}
+
+p {
+    
+    color: #000;
+    font-size: 18px;
+    padding: 5px;
+    margin: 0 auto;
+    width: auto;
+    background-color: rgba(255, 255, 255, 0.85);
+    text-align: center;
+
+}
+
+footer {
+    
+    color: #fff;
+    font-size: 20px;
+    background-color: rgba(245, 153, 253, 0.850);
+    text-align: center;
+    width: auto;
+}
